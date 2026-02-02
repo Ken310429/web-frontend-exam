@@ -1,0 +1,62 @@
+@use 'sass:color';
+//顏色深淺
+
+//灰色
+$gray-100: #FFFFFF;
+$gray-200: #F2F2F2;
+$gray-300: #E6E6E6;
+$gray-400: #D9D9D9;
+$gray-500: #CCCCCC;
+$gray-600: #B3B3B3;
+$gray-700: #999999;
+$gray-800: #808080;
+$gray-900: #666666;
+$gray-1000: #4D4D4D;
+$gray-1100: #333333;
+$gray-1200: #262626;
+$gray-1300: #1A1A1A;
+$gray-1400: #0D0D0D;
+$gray-1500: #000000;
+//橘色
+$orange-100: #FBE6D1;
+$orange-200: #FADBBE;
+$orange-300: #F8D1AB;
+$orange-400: #F7C798;
+$orange-500: #F4B273;
+$orange-600: #F19E4D;
+$orange-700: #EE8927;
+$orange-800: #CC7520;
+$orange-900: #AA6119;
+$orange-1000: #884C13;
+$orange-1100: #77420F;
+$orange-1200: #66380C;
+$orange-1300: #552E08;
+$orange-1400: #442405;
+//紅色
+$red-100: #FBEFEC;
+$red-200: #F7DEDA;
+$red-300: #F3CEC7;
+$red-400: #EFBDB5;
+$red-500: #E89D8F;
+$red-600: #E07C6A;
+$red-700: #D85B45;
+$red-800: #B24A38;
+$red-900: #8C3A2B;
+$red-1000: #7F3224;
+$red-1100: #702B1F;
+$red-1200: #612419;
+$red-1300: #521D14;
+$red-1400: #43160E;
+
+// 字大小
+$font-xs: 0.694rem;
+$font-sm: 0.833rem;
+$font-md: 1rem;
+$font-lg: 1.2rem;
+$font-xl: 1.44rem;
+$font-xxl: 1.728rem;
+$font-xxxl: 2.074rem;
+$font-xxxxl: 2.488rem;
+$font-xxxxxl: 2.986rem;
+
+$mobile-breakpoint: 768px;
