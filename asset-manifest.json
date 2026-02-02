@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/web-frontend-exam/static/css/main.2f546720.css",
+    "main.js": "/web-frontend-exam/static/js/main.255e4e85.js",
+    "index.html": "/web-frontend-exam/index.html",
+    "main.2f546720.css.map": "/web-frontend-exam/static/css/main.2f546720.css.map",
+    "main.255e4e85.js.map": "/web-frontend-exam/static/js/main.255e4e85.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f546720.css",
+    "static/js/main.255e4e85.js"
+  ]
+}
