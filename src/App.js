@@ -147,12 +147,12 @@ const App = () => {
   return (
     <div className='main'>
       <div className='background-animation'>
-        <img className='background-img' src='/images/Background-01.png' alt='Background' />
-        <img className='character-01-white' src='/images/Character-02.png' alt='Character 02' />
-        <img className='logo-01' src='/images/Logo-01.png' alt='logoImg' />
-        <Eye imgUrl='/images/Left-Eye.png' eyeClass='left-eye' />
-        <Eye imgUrl='/images/Right-Eye.png' eyeClass='right-eye' />
-        <img className='character-01' src='/images/Character-01.png' alt='Character 01' />
+        <img className='background-img' src={`${process.env.PUBLIC_URL}/images/Background-01.png`} alt='Background' />
+        <img className='character-01-white' src={`${process.env.PUBLIC_URL}/images/Character-02.png`} alt='Character 02' />
+        <img className='logo-01' src={`${process.env.PUBLIC_URL}/images/Logo-01.png`} alt='logoImg' />
+        <Eye imgUrl={`${process.env.PUBLIC_URL}/images/Left-Eye.png`} eyeClass='left-eye' />
+        <Eye imgUrl={`${process.env.PUBLIC_URL}/images/Right-Eye.png`} eyeClass='right-eye' />
+        <img className='character-01' src={`${process.env.PUBLIC_URL}/images/Character-01.png`} alt='Character 01' />
       </div>
       <div className='top-work'>
         <p className='title'>適合前端工程師的好工作</p>
