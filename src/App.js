@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import './App.scss';
 import Eye from './components/Eye';
 import TextField from '@mui/material/TextField';
@@ -31,7 +31,7 @@ const App = () => {
 
   const getCompanyNames = async () => {
     try {
-      const response = await fetch('api/v1/jobs');
+      const response = await fetch('/api/v1/jobs');
       if (response.ok) {
         const data = await response.json();
         setCompanyNameOptions([...new Set(data.data.map(job => job.companyName))]);
@@ -56,7 +56,7 @@ const App = () => {
         params.append('salary_level', selectedSalary.id);
       }
 
-      const response = await fetch(`api/v1/jobs?${params.toString()}`);
+      const response = await fetch(`/api/v1/jobs?${params.toString()}`);
       if (response.ok) {
         const data = await response.json();
         setJobList(data);
@@ -88,7 +88,7 @@ const App = () => {
 
   const getEducation = async () => {
     try {
-      const response = await fetch('api/v1/educationLevelList');
+      const response = await fetch('/api/v1/educationLevelList');
       if (response.ok) {
         const data = await response.json();
 
@@ -100,7 +100,7 @@ const App = () => {
   };
   const getSalary = async () => {
     try {
-      const response = await fetch('api/v1/salaryLevelList');
+      const response = await fetch('/api/v1/salaryLevelList');
       if (response.ok) {
         const data = await response.json();
         setSalaryList(data)
@@ -127,7 +127,7 @@ const App = () => {
     setModalOpen(true);
     setModalLoading(true);
     try {
-      const response = await fetch(`api/v1/jobs/${jobId}`);
+      const response = await fetch(`/api/v1/jobs/${jobId}`);
       if (response.ok) {
         const data = await response.json();
         setJobDetail(data);
@@ -150,8 +150,8 @@ const App = () => {
         <img className='background-img' src={`${process.env.PUBLIC_URL}/images/Background-01.png`} alt='Background' />
         <img className='character-01-white' src={`${process.env.PUBLIC_URL}/images/Character-02.png`} alt='Character 02' />
         <img className='logo-01' src={`${process.env.PUBLIC_URL}/images/Logo-01.png`} alt='logoImg' />
-        <Eye imgUrl={`${process.env.PUBLIC_URL}/images/Left-Eye.png`} eyeClass='left-eye' />
-        <Eye imgUrl={`${process.env.PUBLIC_URL}/images/Right-Eye.png`} eyeClass='right-eye' />
+        <Eye imgUrl={`${process.env.PUBLIC_URL}/images/left-eye.png`} eyeClass='left-eye' />
+        <Eye imgUrl={`${process.env.PUBLIC_URL}/images/right-eye.png`} eyeClass='right-eye' />
         <img className='character-01' src={`${process.env.PUBLIC_URL}/images/Character-01.png`} alt='Character 01' />
       </div>
       <div className='top-work'>
